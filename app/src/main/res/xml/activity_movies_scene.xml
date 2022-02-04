@@ -9,7 +9,15 @@
         motion:duration="1000">
        <KeyFrameSet>
        </KeyFrameSet>
-        <OnSwipe motion:touchAnchorId="@+id/moviesPageRecycler" />
+        <OnSwipe
+            motion:touchAnchorId="@+id/moviesPageRecycler"
+            motion:dragDirection="dragUp"
+            motion:dragScale="1"
+            motion:moveWhenScrollAtTop="true"
+            motion:onTouchUp="autoComplete"
+            motion:touchAnchorSide="top"
+
+            />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
