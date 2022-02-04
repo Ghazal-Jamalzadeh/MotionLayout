@@ -2,7 +2,29 @@
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ConstraintSet android:id="@+id/start"></ConstraintSet>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/guideLine1"
+            app:layout_constraintStart_toStartOf="parent" >
+            <CustomAttribute
+                app:attributeName="saturation"
+                app:customDimension="1dp" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintStart_toStartOf="parent">
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="#304FFE" />
+        </Constraint>
+    </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
@@ -12,7 +34,11 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@id/guideLine1"
             app:layout_constraintStart_toStartOf="parent"
-            android:alpha="0" />
+            android:alpha="1" >
+            <CustomAttribute
+                app:attributeName="saturation"
+                app:customDimension="0dp" />
+        </Constraint>
         <Constraint
             android:id="@+id/guideLine1"
             app:layout_constraintGuide_percent="0.0"
@@ -25,19 +51,37 @@
             android:layout_width="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/image"
             android:id="@+id/fab"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="5dp"
+            android:rotation="182" />
+        <Constraint
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintStart_toStartOf="parent">
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="#C51162" />
+        </Constraint>
     </ConstraintSet>
 
     <Transition
         app:constraintSetEnd="@id/end"
         app:constraintSetStart="@+id/start" >
-        <KeyFrameSet ></KeyFrameSet>
+        <KeyFrameSet >
+            <KeyAttribute
+                app:motionTarget="@+id/title"
+                app:framePosition="50"
+                android:scaleX="1.2" />
+        </KeyFrameSet>
         <OnClick app:targetId="@+id/fab"
             app:clickAction="toggle" />
         <OnSwipe />
-        <OnSwipe app:touchAnchorId="@+id/scrollView" />
+        <OnSwipe />
     </Transition>
+
     <ConstraintSet android:id="@+id/test" />
+
     <Transition
         app:constraintSetStart="@+id/test"
         app:constraintSetEnd="@+id/start" />
