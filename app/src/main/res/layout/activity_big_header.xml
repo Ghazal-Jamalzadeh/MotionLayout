@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_big_header_scene"
+    tools:context=".activities.BigHeaderActivity">
+
+    <ImageView
+        android:id="@+id/HeaderImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vertical_img"
+        app:layout_constraintBottom_toTopOf="@id/descText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_top_rounded"
+        android:fontFamily="@font/iransans"
+        android:gravity="center_vertical"
+        android:paddingRight="20dp"
+        android:text="@string/ContentsTitle"
+        android:textColor="@color/ebonyClay"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/HeaderImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        android:fontFamily="@font/iransans"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/loremIpsumFa"
+        android:textColor="@color/grayDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
