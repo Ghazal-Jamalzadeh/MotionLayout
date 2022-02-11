@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/image2"
+        motion:constraintSetStart="@id/image3"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/itemHouse_imgCard"
+            motion:clickAction="toggle" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/image3">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/image2">
+        <Constraint
+            android:id="@+id/materialCardView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="@id/itemHouse_imgCard"
+            android:layout_marginRight="5dp"
+            motion:layout_constraintStart_toStartOf="@+id/itemHouse_imgCard"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/itemHouse_imgCard"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/materialCardView" />
+    </ConstraintSet>
+</MotionScene>

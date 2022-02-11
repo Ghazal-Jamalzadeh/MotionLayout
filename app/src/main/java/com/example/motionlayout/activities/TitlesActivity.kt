@@ -42,5 +42,6 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(7 , "season one"))
         titlesList.add(Title(9 , "Movie page"))
         titlesList.add(Title(10 , "Login page"))
+        titlesList.add(Title(11 , "Houses page"))
     }
 }

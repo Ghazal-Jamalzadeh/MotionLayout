@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.motionlayout.activities.HousesActivity
 import com.example.motionlayout.activities.LoginActivity
 import com.example.motionlayout.activities.MainActivity
 import com.example.motionlayout.activities.MoviesActivity
@@ -43,18 +44,23 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                 index.text = title.id.toString()
                 titleTv.text = title.title
                 itemView.setOnClickListener {
-                    if (title.id.equals(7)) {
+                    if (title.id == 7) {
                         val intent = Intent(context, MainActivity::class.java)
 //                        intent.putExtra("keyIdentifier", value)
                         context.startActivity(intent)
 
-                    } else if (title.id.equals(9)) {
+                    } else if (title.id == 9) {
                         val intent = Intent(context, MoviesActivity::class.java)
 //                        intent.putExtra("keyIdentifier", value)
                         context.startActivity(intent)
 
-                    }else if (title.id.equals(10)) {
+                    }else if (title.id == 10) {
                         val intent = Intent(context, LoginActivity::class.java)
+//                        intent.putExtra("keyIdentifier", value)
+                        context.startActivity(intent)
+
+                    }else if (title.id == 11) {
+                        val intent = Intent(context, HousesActivity::class.java)
 //                        intent.putExtra("keyIdentifier", value)
                         context.startActivity(intent)
 
