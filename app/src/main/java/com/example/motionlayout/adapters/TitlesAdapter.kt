@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.motionlayout.activities.LoginActivity
 import com.example.motionlayout.activities.MainActivity
 import com.example.motionlayout.activities.MoviesActivity
 import com.example.motionlayout.databinding.ItemsTitleBinding
@@ -49,6 +50,11 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
 
                     } else if (title.id.equals(9)) {
                         val intent = Intent(context, MoviesActivity::class.java)
+//                        intent.putExtra("keyIdentifier", value)
+                        context.startActivity(intent)
+
+                    }else if (title.id.equals(10)) {
+                        val intent = Intent(context, LoginActivity::class.java)
 //                        intent.putExtra("keyIdentifier", value)
                         context.startActivity(intent)
 

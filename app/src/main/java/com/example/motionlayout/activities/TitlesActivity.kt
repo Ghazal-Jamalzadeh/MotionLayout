@@ -18,6 +18,7 @@ class TitlesActivity : AppCompatActivity() {
     private  val titlesList : MutableList<Title> = mutableListOf()
     //adapter
     private lateinit var titlesAdapter : TitlesAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_titles)
@@ -40,5 +41,6 @@ class TitlesActivity : AppCompatActivity() {
     private  fun addTitles (){
         titlesList.add(Title(7 , "season one"))
         titlesList.add(Title(9 , "Movie page"))
+        titlesList.add(Title(10 , "Login page"))
     }
 }

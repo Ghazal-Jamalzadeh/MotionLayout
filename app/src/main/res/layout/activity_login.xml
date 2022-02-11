@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blur"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layoutDescription="@xml/activity_login_scene">
+    <!--Logo-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginHeaderLay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/loginHeaderImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/iransans"
+            android:text="دوره جامع MotionLayout ;)"
+            android:textColor="@color/cararra"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginHeaderImg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Signup-->
+    <TextView
+        android:id="@+id/loginSignupBtn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_rounded_login"
+        android:fontFamily="@font/iransans"
+        android:gravity="center"
+        android:text="ثبت نام"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--Title-->
+    <TextView
+        android:id="@+id/loginContainerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/iransans"
+        android:shadowColor="@color/ebonyClay"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="مشخصات خود را وارد کنید"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/loginContainerUsernameEdt"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!--Username-->
+    <EditText
+        android:id="@+id/loginContainerUsernameEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_rounded_white"
+        android:drawableEnd="@drawable/ic_round_person"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/iransans"
+        android:hint="نام کاربری"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/loginContainerPasswordEdt"
+        app:layout_constraintEnd_toEndOf="@id/loginContainerTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--Password-->
+    <EditText
+        android:id="@+id/loginContainerPasswordEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_rounded_white"
+        android:drawableEnd="@drawable/ic_round_lock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/iransans"
+        android:hint="کلمه عبور"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/loginContainerEmailEdt"
+        app:layout_constraintEnd_toEndOf="@id/loginContainerTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--Email-->
+    <EditText
+        android:id="@+id/loginContainerEmailEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bg_rounded_white"
+        android:drawableEnd="@drawable/ic_round_person"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/iransans"
+        android:hint="ایمیل"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@id/loginContainerLoginBtn"
+        app:layout_constraintEnd_toEndOf="@id/loginContainerTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--Signup-->
+    <TextView
+        android:id="@+id/loginContainerLoginBtn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_rounded_login"
+        android:fontFamily="@font/iransans"
+        android:gravity="center"
+        android:text="ارسال اطلاعات"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
