@@ -44,5 +44,6 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(10 , "Login page"))
         titlesList.add(Title(11 , "Houses page"))
         titlesList.add(Title(12 , "Big Image"))
+        titlesList.add(Title(13 , "Splash Screen"))
     }
 }

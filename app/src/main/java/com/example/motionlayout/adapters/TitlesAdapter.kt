@@ -61,6 +61,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, BigHeaderActivity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 13) {
+                        val intent = Intent(context, SplashActivitty::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }
