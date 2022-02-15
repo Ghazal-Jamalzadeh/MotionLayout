@@ -69,6 +69,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, SearchBoxActivity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 15) {
+                        val intent = Intent(context, ProfileActivity::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }
