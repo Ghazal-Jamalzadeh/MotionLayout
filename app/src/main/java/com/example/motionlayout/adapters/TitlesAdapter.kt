@@ -77,6 +77,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, LockScreenActivity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 17) {
+                        val intent = Intent(context, HousesImagesActivity::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }

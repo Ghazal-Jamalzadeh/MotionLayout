@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_houses_images_scene"
+    tools:context=".activities.HousesImagesActivity">
+
+    <ImageView
+        android:id="@+id/housesHeader"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/house5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/housesContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/bg_top_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/housesHeader" />
+
+    <TextView
+        android:id="@+id/housesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/iransans"
+        android:text="پنت هاوس سعادت آباد"
+        android:textColor="@color/ebonyClay"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/housesContainer" />
+
+    <TextView
+        android:id="@+id/housesLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/iransans"
+        android:gravity="center_vertical"
+        android:text="تهران - سعادت آباد - میدان کاج"
+        android:textColor="@color/blue"
+        android:textSize="10sp"
+        app:drawableEndCompat="@drawable/ic_round_location_on_24"
+        app:drawableTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="@id/housesName"
+        app:layout_constraintTop_toBottomOf="@id/housesName" />
+
+    <TextView
+        android:id="@+id/housesPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/iransans"
+        android:gravity="center_vertical"
+        android:text="70.000.000.000 تومان"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_round_attach_money_24"
+        app:drawableTint="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/housesName" />
+
+    <View
+        android:id="@+id/housesLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.1"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/housesLocation" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/iransans"
+        android:gravity="center_vertical"
+        android:text="تصاویر بیشتر از خانه"
+        android:textColor="@color/ebonyClay"
+        android:textSize="12sp"
+        app:drawableEndCompat="@drawable/ic_round_image_24"
+        app:drawableTint="@color/ebonyClay"
+        app:layout_constraintEnd_toEndOf="@id/housesLocation"
+        app:layout_constraintTop_toBottomOf="@id/housesLine" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/housesImg1"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/house1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:riv_border_color="@color/ebonyClay"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="10dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/housesImg2"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/house2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:riv_border_color="@color/ebonyClay"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="10dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/housesImg3"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/house4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:riv_border_color="@color/ebonyClay"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="10dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

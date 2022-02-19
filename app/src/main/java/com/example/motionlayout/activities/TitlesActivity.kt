@@ -48,5 +48,6 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(14 , "Search Box"))
         titlesList.add(Title(15 , "Profile"))
         titlesList.add(Title(16 , "Lock screen"))
+        titlesList.add(Title(17 , "Housese Card Images"))
     }
 }
