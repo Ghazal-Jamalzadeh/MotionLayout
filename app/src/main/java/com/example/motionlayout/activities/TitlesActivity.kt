@@ -47,5 +47,6 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(13 , "Splash Screen"))
         titlesList.add(Title(14 , "Search Box"))
         titlesList.add(Title(15 , "Profile"))
+        titlesList.add(Title(16 , "Lock screen"))
     }
 }
