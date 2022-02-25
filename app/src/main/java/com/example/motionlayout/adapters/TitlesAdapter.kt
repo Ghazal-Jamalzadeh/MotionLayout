@@ -85,6 +85,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, StoryActivity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 19) {
+                        val intent = Intent(context, MenuActivity::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }

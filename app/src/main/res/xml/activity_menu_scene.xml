@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/delete"
+        motion:constraintSetStart="@id/img1_scene"
+        motion:duration="2500">
+
+       <KeyFrameSet>
+           <!--Menu base-->
+           <KeyPosition
+               motion:motionTarget="@+id/menuBase"
+               motion:framePosition="18"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.68"
+               motion:percentY="0.3" />
+           <KeyPosition
+               motion:motionTarget="@+id/menuBase"
+               motion:framePosition="36"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.9"
+               motion:percentY="0.65" />
+           <KeyPosition
+               motion:motionTarget="@+id/menuBase"
+               motion:framePosition="46"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+           <KeyPosition
+               motion:motionTarget="@+id/menuBase"
+               motion:framePosition="65"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.1"
+               motion:percentY="0.62" />
+           <KeyPosition
+               motion:motionTarget="@+id/menuBase"
+               motion:framePosition="80"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.5" />
+           <KeyPosition
+               motion:motionTarget="@+id/menuBase"
+               motion:framePosition="90"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+           <!--Menu 1-->
+           <KeyPosition
+               motion:motionTarget="@+id/menu1"
+               motion:framePosition="20"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.68"
+               motion:percentY="0.3" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu1"
+               motion:framePosition="40"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.9"
+               motion:percentY="0.65" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu1"
+               motion:framePosition="50"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu1"
+               motion:framePosition="60"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.1"
+               motion:percentY="0.62" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu1"
+               motion:framePosition="80"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.5" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu1"
+               motion:framePosition="90"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+
+           <KeyPosition
+               motion:motionTarget="@+id/menu2"
+               motion:framePosition="23"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.68"
+               motion:percentY="0.3" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu2"
+               motion:framePosition="46"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.9"
+               motion:percentY="0.65" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu2"
+               motion:framePosition="54"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu2"
+               motion:framePosition="66"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.1"
+               motion:percentY="0.62" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu2"
+               motion:framePosition="85"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.5" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu2"
+               motion:framePosition="92"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu3"
+               motion:framePosition="26"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.68"
+               motion:percentY="0.3" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu3"
+               motion:framePosition="48"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.9"
+               motion:percentY="0.65" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu3"
+               motion:framePosition="55"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu3"
+               motion:framePosition="69"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.1"
+               motion:percentY="0.62" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu3"
+               motion:framePosition="89"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.5" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu3"
+               motion:framePosition="94"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu4"
+               motion:framePosition="30"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.68"
+               motion:percentY="0.3" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu4"
+               motion:framePosition="51"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.9"
+               motion:percentY="0.65" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu4"
+               motion:framePosition="56"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu4"
+               motion:framePosition="73"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.1"
+               motion:percentY="0.62" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu4"
+               motion:framePosition="94"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.5" />
+           <KeyPosition
+               motion:motionTarget="@+id/menu4"
+               motion:framePosition="97"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.8" />
+       </KeyFrameSet>
+
+        <OnClick motion:targetId="@+id/menuBase" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/img1_scene">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/delete">
+        <Constraint
+            android:id="@+id/menuBase"
+            android:elevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+            android:rotation="45" />
+        <Constraint
+            android:id="@+id/menu1"
+            android:elevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/menuBase"
+            motion:layout_constraintStart_toEndOf="@+id/menuBase"
+            motion:layout_constraintTop_toTopOf="@+id/menuBase"
+            android:layout_marginStart="10dp" />
+        <Constraint
+            android:id="@+id/menu2"
+            android:elevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu1"
+            motion:layout_constraintStart_toEndOf="@+id/menu1"
+            motion:layout_constraintTop_toTopOf="@+id/menu1"
+            android:layout_marginStart="10dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu2"
+            android:layout_width="wrap_content"
+            android:id="@+id/menu3"
+            motion:layout_constraintStart_toEndOf="@+id/menu2"
+            motion:layout_constraintTop_toTopOf="@+id/menu2"
+            android:layout_marginStart="10dp" />
+        <Constraint
+            android:id="@+id/menu4"
+            android:elevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/menu3"
+            motion:layout_constraintStart_toEndOf="@+id/menu3"
+            motion:layout_constraintTop_toTopOf="@+id/menu3"
+            android:layout_marginStart="10dp" />
+    </ConstraintSet>
+</MotionScene>
