@@ -51,5 +51,6 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(17 , "Housese Card Images"))
         titlesList.add(Title(18 , "Instagram Story"))
         titlesList.add(Title(19 , "Fab Menu"))
+        titlesList.add(Title(20 , "Check List"))
     }
 }

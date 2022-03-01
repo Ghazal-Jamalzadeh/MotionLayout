@@ -8,12 +8,13 @@
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/drawable/bg_circle_unlock.xml" value="0.1725225225225225" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/drawable/bg_unlock_rounded.xml" value="0.1725225225225225" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_big_header.xml" value="0.1608108108108108" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_check_list.xml" value="0.1572072072072072" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_houses.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_houses_images.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_lock_screen.xml" value="0.15855855855855855" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_menu.xml" value="0.1454954954954955" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_menu.xml" value="0.22" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_movies.xml" value="0.18" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_profile.xml" value="0.15900900900900902" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_search_box.xml" value="0.1" />
@@ -21,6 +22,7 @@
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_splash_activitty.xml" value="0.17297297297297298" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_story.xml" value="0.15765765765765766" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_titles.xml" value="0.1608108108108108" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_check_list.xml" value="0.1572072072072072" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_houses.xml" value="0.17297297297297298" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_movie_light.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/items_movie.xml" value="0.25" />
