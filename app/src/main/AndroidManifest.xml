@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotionLayout">
         <activity
+            android:name=".activities.TelegramActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.CheckListActivity"
             android:exported="false" />
         <activity
