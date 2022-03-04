@@ -97,6 +97,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, TelegramActivity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 22) {
+                        val intent = Intent(context, HousesImages2Activity::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }

@@ -53,5 +53,6 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(19 , "Fab Menu"))
         titlesList.add(Title(20 , "Check List"))
         titlesList.add(Title(21 , "Telegram"))
+        titlesList.add(Title(22 , "Houses card stack"))
     }
 }
