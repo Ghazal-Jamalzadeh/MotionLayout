@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_menu_vertical_scene"
+    tools:context=".activities.MenuVerticalActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu1Txt"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="@color/emerald"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/iransans"
+            android:gravity="center"
+            android:text="خانه"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu2Txt"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu1Txt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/iransans"
+            android:gravity="center"
+            android:text="سبد خرید"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu3Txt"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="@color/oriolesOrange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu2Txt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/iransans"
+            android:gravity="center"
+            android:text="پروفایل"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/menuArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:elevation="24dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_round_back"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

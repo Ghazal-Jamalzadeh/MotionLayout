@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotionLayout">
         <activity
+            android:name=".activities.MenuVerticalActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.HousesImages2Activity"
             android:exported="false" />
         <activity
