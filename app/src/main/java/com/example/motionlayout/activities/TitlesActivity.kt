@@ -48,12 +48,13 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(14 , "Search Box"))
         titlesList.add(Title(15 , "Profile"))
         titlesList.add(Title(16 , "Lock screen"))
-        titlesList.add(Title(17 , "Housese Card Images"))
+        titlesList.add(Title(17 , "Housese Card Images 1"))
         titlesList.add(Title(18 , "Instagram Story"))
         titlesList.add(Title(19 , "Fab Menu"))
         titlesList.add(Title(20 , "Check List"))
         titlesList.add(Title(21 , "Telegram"))
-        titlesList.add(Title(22 , "Houses card stack"))
+        titlesList.add(Title(22 , "Houses card stack 2"))
         titlesList.add(Title(23 , "Vertical Menu"))
+        titlesList.add(Title(24 , "Houses card stack 3"))
     }
 }
