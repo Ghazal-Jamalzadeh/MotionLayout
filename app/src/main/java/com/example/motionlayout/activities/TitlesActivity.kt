@@ -56,5 +56,7 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(22 , "Houses card stack 2"))
         titlesList.add(Title(23 , "Vertical Menu"))
         titlesList.add(Title(24 , "Houses card stack 3"))
+        titlesList.add(Title(25 , "Drawer Menu 1"))
+        titlesList.add(Title(252 , "Drawer Menu 2"))
     }
 }

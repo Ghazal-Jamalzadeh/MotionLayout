@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/loading_end"
+        motion:constraintSetStart="@id/loading_start"
+        motion:duration="700"
+        motion:motionInterpolator="easeInOut">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/menu1Item"
+               motion:framePosition="10"
+               android:alpha="0"
+               android:translationX="120dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/menu2Item"
+               motion:framePosition="20"
+               android:alpha="0"
+               android:translationX="140dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/menu3Item"
+               motion:framePosition="30"
+               android:alpha="0"
+               android:translationX="160dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/menu4Item"
+               motion:framePosition="40"
+               android:alpha="0"
+               android:translationX="180dp" />
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/contentLay" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/loading_start">
+        <Constraint
+            android:id="@+id/menu1Item"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="150dp"
+            android:translationX="120dp"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/menu2Item"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toBottomOf="@id/menu1Item"
+            android:alpha="0"
+            android:translationX="140dp" />
+        <Constraint
+            android:id="@+id/menu3Item"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toBottomOf="@id/menu2Item"
+            android:alpha="0"
+            android:translationX="160dp" />
+        <Constraint
+            android:id="@+id/menu4Item"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toBottomOf="@id/menu3Item"
+            android:alpha="0"
+            android:translationX="180dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/loading_end">
+        <Constraint
+            android:id="@+id/contentLay"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:translationX="-200dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:rotationY="15"
+            android:alpha="0.7" />
+    </ConstraintSet>
+</MotionScene>
