@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotionLayout">
         <activity
+            android:name=".activities.ExpandableActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.DrawerMenuActivity2"
             android:exported="false" />
         <activity
