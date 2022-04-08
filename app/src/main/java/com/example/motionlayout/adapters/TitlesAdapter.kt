@@ -121,6 +121,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, ExpandableActivity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 27) {
+                        val intent = Intent(context, LoadingButtonActivity::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }

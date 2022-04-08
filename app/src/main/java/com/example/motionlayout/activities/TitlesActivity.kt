@@ -59,5 +59,6 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(25 , "Drawer Menu 1"))
         titlesList.add(Title(252 , "Drawer Menu 2"))
         titlesList.add(Title(26 , "Expandable Layout"))
+        titlesList.add(Title(27 , "Loading Button"))
     }
 }
