@@ -125,6 +125,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, LoadingButtonActivity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 28) {
+                        val intent = Intent(context, MovieAppActivity::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }

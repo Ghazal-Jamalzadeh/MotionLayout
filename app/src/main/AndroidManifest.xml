@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotionLayout">
         <activity
+            android:name=".activities.MovieAppActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.LoadingButtonActivity"
             android:exported="false" />
         <activity
