@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ebonyClay"
+    app:layoutDescription="@xml/activity_menu2_scene"
+    tools:context=".activities.Menu2Activity">
+
+    <View
+        android:id="@+id/menu1"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/menu2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/menu2"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/emerald"
+        app:layout_constraintBottom_toTopOf="@+id/menu3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/menu3"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/crayola"
+        app:layout_constraintBottom_toTopOf="@+id/menu4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/menu4"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/oriolesOrange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iransans"
+        android:text="خانه "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/menu1"
+        app:layout_constraintEnd_toStartOf="@+id/menu1"
+        app:layout_constraintStart_toStartOf="@+id/menu1"
+        app:layout_constraintTop_toTopOf="@+id/menu1" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iransans"
+        android:text="سبد خرید "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/menu2"
+        app:layout_constraintEnd_toStartOf="@+id/menu2"
+        app:layout_constraintStart_toStartOf="@+id/menu2"
+        app:layout_constraintTop_toTopOf="@+id/menu2" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iransans"
+        android:text="پروفایل "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/menu3"
+        app:layout_constraintEnd_toStartOf="@+id/menu3"
+        app:layout_constraintStart_toStartOf="@+id/menu3"
+        app:layout_constraintTop_toTopOf="@+id/menu3" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iransans"
+        android:text="درباره ما "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/menu4"
+        app:layout_constraintEnd_toStartOf="@+id/menu4"
+        app:layout_constraintStart_toStartOf="@+id/menu4"
+        app:layout_constraintTop_toTopOf="@+id/menu4" />
+
+    <View
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu4" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
