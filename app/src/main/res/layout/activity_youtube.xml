@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layoutDescription="@xml/activity_youtube_scene"
+    tools:context=".activities.YoutubeActivity">
+    <!--Container-->
+    <View
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@color/cararra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Image-->
+    <ImageView
+        android:id="@+id/coverImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aquaman"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container" />
+    <!--Title-->
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:alpha="0"
+        android:text="Aquaman"
+        android:textColor="@color/ebonyClay"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/closeImg"
+        app:layout_constraintEnd_toStartOf="@id/playImg"
+        app:layout_constraintStart_toEndOf="@id/coverImg"
+        app:layout_constraintTop_toTopOf="@id/closeImg" />
+    <!--Play-->
+    <ImageView
+        android:id="@+id/playImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:alpha="0"
+        android:src="@drawable/ic_round_play_arrow_24"
+        app:layout_constraintBottom_toBottomOf="@id/closeImg"
+        app:layout_constraintEnd_toStartOf="@id/closeImg"
+        app:layout_constraintTop_toTopOf="@id/closeImg"
+        app:tint="@color/ebonyClay" />
+    <!--Close-->
+    <ImageView
+        android:id="@+id/closeImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0"
+        android:src="@drawable/ic_round_close_24"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        app:tint="@color/ebonyClay" />
+    <!--Recycler-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container" />
+    <!--Menu-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_home" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
