@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/swipe_right"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorSide="right" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/swipe_left" >
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorSide="left" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/SnapCenterView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" >
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/black" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/snapSelected"
+            motion:layout_constraintEnd_toEndOf="@+id/snapHomeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/snapHomeImg"
+            motion:layout_constraintStart_toStartOf="@+id/snapHomeImg"
+            android:alpha="0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/swipe_right">
+        <Constraint
+            android:id="@+id/SnapCenterView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" >
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/ebonyClay" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/SnapLeftView"
+            motion:layout_constraintEnd_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/snapFavoriteImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="80dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/snapFavoriteTxt"
+            motion:layout_constraintEnd_toEndOf="@+id/snapFavoriteImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/snapFavoriteImg"
+            motion:layout_constraintStart_toStartOf="@+id/snapFavoriteImg"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/snapSelected"
+            motion:layout_constraintEnd_toEndOf="@+id/snapFavoriteImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/snapFavoriteImg"
+            motion:layout_constraintStart_toStartOf="@+id/snapFavoriteImg"
+            android:alpha="1" />
+        <Constraint
+            android:id="@+id/snapBookmarkImg"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="80dp" />
+        <Constraint
+            android:id="@+id/snapBookmarkTxt"
+            motion:layout_constraintEnd_toEndOf="@+id/snapBookmarkImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/snapBookmarkImg"
+            android:alpha="0"
+            motion:layout_constraintStart_toStartOf="@+id/snapBookmarkImg" />
+        <Constraint
+            android:id="@+id/snapHomeImg"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/swipe_left"
+        motion:deriveConstraintsFrom="@+id/swipe_right" >
+        <Constraint
+            android:id="@+id/SnapLeftView"
+            motion:layout_constraintEnd_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/SnapRightView"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/snapSelected"
+            motion:layout_constraintEnd_toEndOf="@+id/snapBookmarkImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/snapBookmarkImg"
+            motion:layout_constraintStart_toStartOf="@+id/snapBookmarkImg" />
+    </ConstraintSet>
+
+</MotionScene>

@@ -145,6 +145,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, Profile2Activity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 33) {
+                        val intent = Intent(context, SnapChatActivity::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }

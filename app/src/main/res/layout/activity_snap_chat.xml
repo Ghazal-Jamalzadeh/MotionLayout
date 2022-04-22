@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_snap_chat_scene"
+    tools:context=".activities.SnapChatActivity">
+
+    <View
+        android:id="@+id/SnapCenterView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/SnapLeftView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/fieryRose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/SnapRightView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/slateBlue"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/snapFavoriteImg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_round_favorite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/snapFavoriteTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Favorite"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/snapFavoriteImg"
+        app:layout_constraintStart_toStartOf="@+id/snapFavoriteImg"
+        app:layout_constraintTop_toBottomOf="@+id/snapFavoriteImg" />
+
+    <ImageView
+        android:id="@+id/snapHomeImg"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_baseline_blur_circular_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/snapBookmarkImg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_round_bookmark_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/snapBookmarkTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="1"
+        android:text="Bookmark"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/snapBookmarkImg"
+        app:layout_constraintStart_toStartOf="@+id/snapBookmarkImg"
+        app:layout_constraintTop_toBottomOf="@+id/snapBookmarkImg" />
+
+    <TextView
+        android:id="@+id/snapSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="\u25CF"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/snapHomeImg"
+        app:layout_constraintStart_toStartOf="@+id/snapHomeImg"
+        app:layout_constraintTop_toBottomOf="@+id/snapHomeImg" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
