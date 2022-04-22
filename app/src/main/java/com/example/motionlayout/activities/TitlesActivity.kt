@@ -64,5 +64,6 @@ class TitlesActivity : AppCompatActivity() {
         titlesList.add(Title(29 , "Vertical Menu 2"))
         titlesList.add(Title(30 , "Youtube"))
         titlesList.add(Title(31 , "3D RecyclerView"))
+        titlesList.add(Title(32 , "Profile 2"))
     }
 }

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_profile2_scene"
+    tools:context=".activities.Profile2Activity">
+    <!--Cover-->
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/profileCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Avatar-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/human"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileCover"
+        app:layout_constraintEnd_toEndOf="@+id/profileCover"
+        app:layout_constraintStart_toStartOf="@+id/profileCover"
+        app:layout_constraintTop_toBottomOf="@+id/profileCover" />
+    <!--Name-->
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Mohammad Nouri"
+        android:textColor="@color/ebonyClay"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileAvatar" />
+    <!--Info-->
+    <TextView
+        android:id="@+id/profileInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Senior android developer"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileName" />
+    <!--Numbers-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileNumbersLay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileInfo">
+
+        <TextView
+            android:id="@+id/profilePosts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="10\nPosts"
+            android:textColor="@color/slateBlue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/profileFollowing"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profileFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="147\nFollowings"
+            android:textColor="@color/slateBlue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/profileFollowers"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/profilePosts"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profileFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="5k\nFollowers"
+            android:textColor="@color/slateBlue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/profileFollowing"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Button-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profileFollowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableEnd="@drawable/ic_round_person_add_24"
+        android:text="Follow"
+        app:backgroundTint="@color/blue"
+        app:drawableTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileNumbersLay" />
+    <!--List-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profileList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileFollowBtn" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
