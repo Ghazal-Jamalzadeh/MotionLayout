@@ -137,6 +137,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
                         val intent = Intent(context, YoutubeActivity::class.java)
                         context.startActivity(intent)
 
+                    }else if (title.id == 31) {
+                        val intent = Intent(context, MovieCard3DActivity::class.java)
+                        context.startActivity(intent)
+
                     }
                 }
             }
