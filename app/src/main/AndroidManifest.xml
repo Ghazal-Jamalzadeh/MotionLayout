@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotionLayout">
         <activity
+            android:name=".project.detail.ProjectDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".project.home.ProjectHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".project.splash.ProjectSplashActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.SnapChatActivity"
             android:exported="false" />
         <activity

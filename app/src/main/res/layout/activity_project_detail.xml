@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layoutDescription="@xml/activity_project_detail_scene"
+    tools:context=".project.detail.ProjectDetailActivity">
+    <!--Header-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailHeaderLay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Back-->
+        <ImageView
+            android:id="@+id/detailHeaderBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_round_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/ebonyClay" />
+        <!--Menu-->
+        <ImageView
+            android:id="@+id/detailHeaderMenu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/more_vert_24px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/ebonyClay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Img-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailCarImgCard"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailHeaderLay">
+
+        <ImageView
+            android:id="@+id/detailCarImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/offroad_car_1" />
+
+    </androidx.cardview.widget.CardView>
+    <!--Card info-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailInfoCard"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginHorizontal="30dp"
+        app:cardBackgroundColor="@color/cultured"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailCarImgCard"
+        app:layout_constraintEnd_toEndOf="@id/detailCarImgCard"
+        app:layout_constraintStart_toStartOf="@id/detailCarImgCard"
+        app:layout_constraintTop_toBottomOf="@id/detailCarImgCard" />
+    <!--Name-->
+    <TextView
+        android:id="@+id/detailCarName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/iransans"
+        android:textColor="@color/ebonyClayDark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/detailInfoCard"
+        app:layout_constraintTop_toTopOf="@id/detailInfoCard" />
+    <!--Renter-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailRenterLay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/detailInfoCard"
+        app:layout_constraintEnd_toEndOf="@id/detailInfoCard"
+        app:layout_constraintStart_toStartOf="@id/detailInfoCard">
+        <!--Img-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/detailRenterAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/human"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--Name-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/iransans"
+            android:text="محمد نوری"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/detailRenterAvatar"
+            app:layout_constraintEnd_toStartOf="@id/detailRenterAvatar"
+            app:layout_constraintTop_toTopOf="@id/detailRenterAvatar" />
+        <!--Message-->
+        <ImageView
+            android:id="@+id/detailRenterMessage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_round_comment_24"
+            app:layout_constraintBottom_toBottomOf="@id/detailRenterAvatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/detailRenterAvatar"
+            app:tint="@color/ebonyClay" />
+        <!--Message-->
+        <ImageView
+            android:id="@+id/detailRenterCall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_round_call_24"
+            app:layout_constraintBottom_toBottomOf="@id/detailRenterAvatar"
+            app:layout_constraintStart_toEndOf="@id/detailRenterMessage"
+            app:layout_constraintTop_toTopOf="@id/detailRenterAvatar"
+            app:tint="@color/ebonyClay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Options-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailOptionsLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/detailRenterLay">
+        <!--Title-->
+        <TextView
+            android:id="@+id/detailOptionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iransans"
+            android:text="امکانات ماشین"
+            android:textColor="@color/ebonyClayDark"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--Speed-->
+        <LinearLayout
+            android:id="@+id/detailOptionsSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/detailOptionsGas"
+            app:layout_constraintTop_toBottomOf="@id/detailOptionsTitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/iransans"
+                android:text="200 کیلومتر"
+                android:textColor="@color/slateBlue"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_speed" />
+
+        </LinearLayout>
+        <!--Gas-->
+        <LinearLayout
+            android:id="@+id/detailOptionsGas"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/detailOptionsSpeed"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/detailOptionsArea"
+            app:layout_constraintTop_toBottomOf="@id/detailOptionsTitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/iransans"
+                android:text="150 لیتر"
+                android:textColor="@color/slateBlue"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_gas" />
+
+        </LinearLayout>
+        <!--Area-->
+        <LinearLayout
+            android:id="@+id/detailOptionsArea"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/detailOptionsGas"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailOptionsTitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/iransans"
+                android:text="کوهستانی و صحرائی"
+                android:textColor="@color/slateBlue"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_mountain" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--List-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailListLay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/detailRentLay"
+        app:layout_constraintTop_toBottomOf="@id/detailOptionsLay">
+        <!--Title-->
+        <TextView
+            android:id="@+id/detailListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iransans"
+            android:text="ماشین های مشابه"
+            android:textColor="@color/ebonyClayDark"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--List-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailListTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Rent-->
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/detailRentLay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:layoutDescription="@xml/activity_project_detail_xml_detailrentlay_scene"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <!--Button-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/detailRentButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:drawableEnd="@drawable/ic_round_calendar_today_24"
+            android:fontFamily="@font/iransans"
+            android:text="اجاره کردن"
+            app:backgroundTint="@color/blue"
+            app:drawableTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/detailRentPrice"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--Price-->
+        <TextView
+            android:id="@+id/detailRentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/iransans"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

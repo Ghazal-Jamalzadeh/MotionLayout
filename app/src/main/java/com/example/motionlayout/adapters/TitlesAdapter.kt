@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.motionlayout.activities.*
 import com.example.motionlayout.databinding.ItemsTitleBinding
 import com.example.motionlayout.models.Title
+import com.example.motionlayout.project.splash.ProjectSplashActivity
 
 class TitlesAdapter constructor(private val items: MutableList<Title>) :
     RecyclerView.Adapter<TitlesAdapter.ViewHolder>() {
@@ -147,6 +148,10 @@ class TitlesAdapter constructor(private val items: MutableList<Title>) :
 
                     }else if (title.id == 33) {
                         val intent = Intent(context, SnapChatActivity::class.java)
+                        context.startActivity(intent)
+
+                    }else if (title.id == 35) {
+                        val intent = Intent(context, ProjectSplashActivity::class.java)
                         context.startActivity(intent)
 
                     }

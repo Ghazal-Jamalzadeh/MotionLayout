@@ -28,6 +28,9 @@
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_movies.xml" value="0.18" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_profile.xml" value="0.15900900900900902" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_profile2.xml" value="0.11396396396396397" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_project_detail.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_project_home.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_project_splash.xml" value="0.17297297297297298" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_search_box.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_serach_box.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_snap_chat.xml" value="0.11216216216216217" />
@@ -37,10 +40,13 @@
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_titles.xml" value="0.1608108108108108" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/activity_youtube.xml" value="0.17297297297297298" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_check_list.xml" value="0.1572072072072072" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_detail_car.xml" value="0.1111111111111111" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_houses.xml" value="0.17297297297297298" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_images_posts.xml" value="0.17297297297297298" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_movie_3d.xml" value="0.11576576576576576" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_movie_light.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_movies_light.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/item_rent_cars.xml" value="0.17297297297297298" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/items_movie.xml" value="0.25" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/items_title.xml" value="0.17297297297297298" />
         <entry key="..\:/AndroidProjects/34-MotionLayout/app/src/main/res/layout/story_layout.xml" value="0.15765765765765766" />

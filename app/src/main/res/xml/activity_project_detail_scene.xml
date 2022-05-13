@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe motion:touchAnchorId="@+id/detailListLay" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/detailHeaderLay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            motion:layout_constraintTop_toTopOf="parent" >
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/white" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/detailCarImgCard"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            motion:layout_constraintTop_toBottomOf="@id/detailHeaderLay"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" >
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="20dp" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/detailCarName"
+            android:elevation="10dp"
+            motion:layout_constraintEnd_toEndOf="@id/detailInfoCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintTop_toTopOf="@id/detailInfoCard"
+            android:layout_marginTop="10dp" />
+        <Constraint
+            android:id="@+id/detailRenterLay"
+            android:elevation="10dp"
+            motion:layout_constraintEnd_toEndOf="@id/detailInfoCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/detailInfoCard"
+            android:layout_marginBottom="10dp"
+            motion:layout_constraintStart_toStartOf="@id/detailInfoCard" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/detailHeaderLay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            motion:layout_constraintTop_toTopOf="parent" >
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/cultured" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/detailCarName"
+            android:elevation="10dp"
+            motion:layout_constraintEnd_toEndOf="@+id/detailHeaderLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            motion:layout_constraintTop_toTopOf="@+id/detailHeaderLay"
+            motion:layout_constraintStart_toStartOf="@+id/detailHeaderLay"
+            motion:layout_constraintBottom_toBottomOf="@+id/detailHeaderLay" />
+        <Constraint
+            android:id="@+id/detailCarImgCard"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            motion:layout_constraintTop_toBottomOf="@id/detailHeaderLay"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="0dp" >
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="0dp" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/detailInfoCard"
+            motion:layout_constraintEnd_toEndOf="@id/detailCarImgCard"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/detailCarImgCard"
+            motion:layout_constraintTop_toBottomOf="@id/detailCarImgCard"
+            motion:layout_constraintStart_toStartOf="@id/detailCarImgCard"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/detailRenterLay"
+            android:elevation="10dp"
+            motion:layout_constraintEnd_toEndOf="@id/detailInfoCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/detailInfoCard"
+            android:layout_marginBottom="10dp"
+            motion:layout_constraintStart_toStartOf="@id/detailInfoCard"
+            motion:layout_constraintTop_toBottomOf="@id/detailCarImgCard"
+            android:layout_marginTop="10dp" />
+        <Constraint
+            android:id="@+id/detailOptionsLay"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            motion:layout_constraintTop_toBottomOf="@id/detailRenterLay"
+            android:layout_marginTop="20dp" />
+        <Constraint
+            android:id="@+id/detailListLay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="@+id/detailRentLay"
+            motion:layout_constraintTop_toBottomOf="@id/detailOptionsLay"
+            android:layout_marginTop="0dp" />
+    </ConstraintSet>
+</MotionScene>
